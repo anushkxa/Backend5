@@ -50,6 +50,19 @@ app.get("/",(req,res)=>{
   }
 })
 
+app.get("/user",(req,res)=>{
+  let q=`SELECT * FROM USER`;
+  try{
+    connection.query(q,(err,result)=>{
+      if(err) throw err;
+      res.render("showuser.ejs",{result});
+    })
+  }catch(err){
+    console.log(err);
+    res.send("some error is DB");
+  }
+})
+
 app.listen("8080",()=>{
   console.log("Port is Listening");
 });
