@@ -4,6 +4,10 @@ const express=require("express");
 const app=express();
 app.port=8080;
 
+const path=require("path");
+app.set("view engine","ejs");
+app.set("views",path.join(__dirname,"/views"));
+
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
