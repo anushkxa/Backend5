@@ -1,0 +1,23 @@
+{
+  "name": "sqlclas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "anushka",
+  "license": "ISC",
+  "description": "learning to connect SQL with server",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "faker": "^6.6.6",
+    "mysql2": "^3.14.3",
+    "node": "^20.19.4",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0"
+  }
+}
